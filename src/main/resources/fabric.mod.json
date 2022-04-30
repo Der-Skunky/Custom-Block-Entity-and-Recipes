@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "be",
+  "version": "${version}",
+  "name": "Block-Entity",
+  "description": "Create Block Entity with Custom Recipes",
+  "authors": [
+    "Skunky"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.skunky.blockentity.client.BeClient"
+    ],
+    "main": [
+      "me.skunky.blockentity.be.Be"
+    ]
+  },
+  "mixins": [
+    "be.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.2",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
